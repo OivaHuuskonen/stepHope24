@@ -1,0 +1,197 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fredericka+the+Great&family=Klee+One&family=Ovo&family=Poiret+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Send+Flowers&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Special+Elite&family=Trocchi&display=swap');*/
+@import "./transitions.css";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Handlee&family=Mate:ital@0;1&family=Neucha&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @layer base {
+    html {
+     /* font-family: "Klee One", cursive;
+       font-family: "Darker Grotesque", sans-serif;
+       font-family: "Fredericka the Great", serif;
+       font-family: "Trocchi", serif;
+       font-family: "Poiret One", sans-serif;*/
+       /* font-family: "Special Elite", system-ui;
+       font-family: "Red Hat Display", sans-serif;
+       font-family: "Source Serif 4", serif;
+      
+       
+       font-family: "Amatic SC", sans-serif;
+       font-family: "Mate", serif;
+       font-family: "Special Elite", system-ui;
+       font-family: "Courier Prime", monospace;
+       font-family: "Handlee", cursive;
+       
+       font-family: "Raleway", sans-serif;
+       font-family: "Playfair Display", serif;*/
+
+       font-family: "Neucha", cursive;
+    }
+
+   li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+ }
+
+ /* for desktop 
+ .whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}*/
+
+/*.whatsapp-icon {
+    margin-top: 16px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}*/
+
+
+.flip-card {
+    perspective: 1000px;
+
+}
+
+.flip-card-inner {
+
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+.swiper-pagination-bullet {
+    width: 10px; /* Adjust the width of the bullets */
+    height: 10px; /* Adjust the height of the bullets */
+    background-color: #f9b4ab; /* Change the color of the bullets */
+    margin: 0 5px; /* Adjust the margin between the bullets */
+}
+
+
+/*.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}*/
+
+
+
+
+/*.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(112, 157, 255, 0.8),
+        hsla(242, 74%, 61%, 0.8)   
+    )!important;
+}*/
+/*.flip-card {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card .flip-card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    z-index: 1;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: white;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}*/
+

@@ -1,0 +1,13 @@
+.page-transition {
+    transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
+  }
+  
+  .page-with-video-background {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+  
+  .page-without-video-background {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
