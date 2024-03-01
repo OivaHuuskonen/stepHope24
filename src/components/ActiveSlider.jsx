@@ -1,4 +1,54 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/free-mode';
+import { FreeMode, Pagination } from 'swiper/modules';
+import CardFlip from './CardFlip';
+import { ServiceData } from '../constants';
+
+const PageHeader = ({ title }) => (
+  <div className="mx-auto px-4 max-w-[1000px] w-full gap-8">
+    <div className="sm:text-left pb-2 md:text-center">
+      <p className="text-4xl font-bold text-[#679186] inline border-b-2 border-[#f9b4ab] sm:text leading-normal">
+        {title}
+      </p>
+    </div>
+  </div>
+);
+
+const ActiveSlider = () => {
+  return (
+    <div name="pyykkilista" className="flex items-center justify-center flex-col h-[900px] bg-[#fdebd3]">
+      <PageHeader title="14 kohdan pyykkilista" />
+      <Swiper
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="max-w-[90%] lg:max-w-[80%]"
+      >
+        {ServiceData.map((item) => (
+          <SwiperSlide key={item.title}>
+            <CardFlip {...item} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
+
+export default ActiveSlider;
+
+
+
+
+
+
+
+
+{/*import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -59,7 +109,7 @@ const ActiveSlider = () => {
     );
 };
 
-export default ActiveSlider;
+export default ActiveSlider;*/}
 
 
 
