@@ -13,7 +13,7 @@ const CardFlip = ({ title, content, title2, content2, backgroundImage, icon }) =
     }
 
     return (
-        <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[320px] w-[240px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer z-20" onClick={handleFlip}>
+        <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[370px] w-[250px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer z-20" onClick={handleFlip}>
             <motion.div
                 className="flip-card-inner w-full h-full"
                 initial={false}
