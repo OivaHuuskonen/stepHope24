@@ -1,12 +1,8 @@
-//import { useState } from 'react'
 import About from './components/About'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-//import Skills from './components/Skills'
-//import Linkit from './components/Linkit'
-//import Work from './components/Work'
 import Contact from './components/Contact'
-import ActiveSlider from './components/ActiveSlider'
+
 
 
   function App() {
@@ -19,8 +15,6 @@ import ActiveSlider from './components/ActiveSlider'
       <Home />
       
       <About />
-     
-      <ActiveSlider />
       
       <Contact />
 

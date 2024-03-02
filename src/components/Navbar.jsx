@@ -46,12 +46,6 @@ const Navbar = () => {
                             AAL.fi
                         </a>
                     </li>
-
-                    <li>
-                        <Link to='pyykkilista' smooth={true} duration={500}>
-                            Pyykkilista
-                        </Link>
-                    </li>
                     <li>
                         <Link to='contact' smooth={true} duration={500}>
                             Yhteystiedot
@@ -88,12 +82,6 @@ const Navbar = () => {
                             <a href="https://www.aal.fi/" target="_blank" rel="noopener noreferrer" onClick={handleClick}>
                                 AAL.fi
                             </a>
-                        </li>
-
-                        <li className='py-6 text-4xl'>
-                            <Link onClick={handleClick} to='pyykkilista' smooth={true} duration={500}>
-                                Pyykkilista
-                            </Link>
                         </li>
 
                         <li className='py-6 text-4xl'>
